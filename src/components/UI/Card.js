@@ -1,11 +1,7 @@
-import React from 'react';
-import styles from './Card.module.css';
-function Card({ children }) {
-    return (
-        <React.Fragment>
-            <div className={styles.card}>{children}</div>
-        </React.Fragment>
-    );
-}
+import classes from './Card.module.css';
+
+const Card = props => {
+  return <div className={classes.card}>{props.children}</div>
+};
 
 export default Card;
